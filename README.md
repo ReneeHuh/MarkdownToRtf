@@ -73,6 +73,56 @@ Converts markdown to plain text (removes formatting).
 - **Horizontal rules**
 - **HTML blocks**
 
+## Unsupported Markdown Features
+
+The following markdown features are not yet supported and will be rendered as comments or placeholder text:
+
+### Advanced Formatting
+- **Footnotes** (`[^1]`) - Not implemented
+- **Definition lists** - Not supported
+- **Abbreviations** - Not supported
+- **Superscript/Subscript** (`^text^`, `~text~`) - Limited support
+
+### Mathematical Content
+- **Math blocks** (`$$...$$`) - Displays as unsupported block comment
+- **Inline math** (`$...$`) - Not processed
+- **LaTeX expressions** - Not supported
+
+### Media and Embeds
+- **Images** (`![alt](url)`) - Converted to placeholder text only
+- **Image references** (`![alt][ref]`) - Shows reference text
+- **Embedded videos** - Not supported
+- **Audio files** - Not supported
+
+### Advanced Block Types
+- **Admonitions/Callouts** (`!!! note`) - Not supported
+- **Mermaid diagrams** - Not supported
+- **PlantUML diagrams** - Not supported
+- **Custom containers** - Not supported
+
+### GitHub Flavored Markdown Extensions
+- **Emoji shortcodes** (`:smile:`) - Not processed
+- **Mentions** (`@username`) - Treated as plain text
+- **Issue references** (`#123`) - Treated as plain text
+- **Syntax highlighting** in code blocks - Preserved but not styled
+
+### Complex Table Features
+- **Merged cells** - Not supported
+- **Table captions** - Not supported
+- **Complex column alignment** - Basic alignment only
+
+### Interactive Elements
+- **Collapsible sections** (`<details>`) - HTML treated as code block
+- **Interactive checkboxes** - Static checkboxes only
+- **Form elements** - Not supported
+
+When unsupported blocks are encountered, they are typically:
+- Rendered as `/* Unsupported block type: [BlockName] */` comments
+- Converted to plain text where possible
+- Preserved as-is in code blocks for HTML content
+
+**Contributions welcome!** If you need support for any of these features, please consider contributing to the project or opening an issue.
+
 ## Examples
 
 ### Basic Usage
