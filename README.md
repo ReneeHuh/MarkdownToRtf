@@ -12,6 +12,17 @@ string rtf = MarkdownToRtfConverter.ConvertRtf(markdown);
 File.WriteAllText("output.rtf", rtf);
 ```
 
+## Screenshots
+
+| WordPad ScreenShot 1 | WordPad ScreenShot 2 | WordPad ScreenShot 3 |
+|----------------|----------------|---------------|
+| ![WordPad Source](ScreenShot1.png) | ![WordPad Source](ScreenShot2.png) | ![WordPad Source](ScreenShot3.png) |
+
+## Sample Files
+
+- **[Sample Markdown](Sample.md)** - Complete markdown example with all supported features
+- **[Generated RTF](Sample.rtf)** - Corresponding RTF output that opens in WordPad
+
 ## Requirements
 
 - Any .NET 
@@ -30,6 +41,7 @@ Converts markdown text to RTF format.
 **Parameters:**
 - `markdown` - The markdown text to convert
 - `includeHeaderAndFooter` - Whether to include RTF document headers (default: true)
+	- This is intended for inserting RTF content into an existing RTF document.
 
 **Returns:** RTF-formatted string
 
