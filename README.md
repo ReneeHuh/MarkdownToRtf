@@ -1,4 +1,4 @@
-# MarkdownToRtf
+﻿# MarkdownToRtf
 
 A single-file static utility that converts Markdown to RTF format using the Markdig parser. Generates WordPad-compatible RTF with proper formatting for headings, paragraphs, lists, tables, code blocks, emphasis, and hyperlinks.
 
@@ -14,7 +14,7 @@ File.WriteAllText("output.rtf", rtf);
 
 ## Requirements
 
-- .NET 8
+- Any .NET 
 - Markdig NuGet package
 
 ## Installation
@@ -131,7 +131,7 @@ To verify RTF output in WordPad:
 
 1. Generate RTF using the converter
 2. Save to `.rtf` file
-3. Open in WordPad (Start ? WordPad)
+3. Open in WordPad (Start → WordPad)
 4. Verify formatting appears correctly:
    - Headers should display in increasing font sizes
    - Lists should have proper bullets/numbers and indentation
@@ -334,9 +334,9 @@ The font table defines all fonts used in the document:
 
 #### Unicode Characters
 ```
-\u9635?                 - Unicode character 9635 (? checked box)
-\u9634?                 - Unicode character 9634 (? unchecked box)
-\'B7                    - Hexadecimal character B7 (� bullet)
+\u9635?                 - Unicode character 9635 (☑ checked box)
+\u9634?                 - Unicode character 9634 (☐ unchecked box)
+\'B7                    - Hexadecimal character B7 (• bullet)
 ```
 
 ### Document Termination
