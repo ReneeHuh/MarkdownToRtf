@@ -6,6 +6,8 @@ Generates WordPad-compatible RTF with proper headers, font tables, and formattin
 
 Supports headings, paragraphs, lists, tables, code blocks, emphasis, and hyperlinks. Easy drop-in solution for .NET apps.
 
+**This Project is Mostly Finished, there are Markdown features that are not yet supported**
+
 Special Thanks to the following projects:
 
 https://github.com/GustavoHennig/MarkdownToRtf
